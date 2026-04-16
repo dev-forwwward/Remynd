@@ -98,3 +98,26 @@
         font-size: 1.25rem;
     }
 }
+
+
+.header5b_bg_circles {
+    inset: auto auto -40rem;
+    opacity: .4;
+}
+
+.h5b_c1 {
+    background: radial-gradient(50% 52.25% at 50% 48.99%, #93A7E2 0%, #7E9FFF 83.37%, #C5D4FF 100%);
+    box-shadow: 0 36.06px 17.515px -25.757px rgba(255, 255, 255, 0.90) inset;
+}
+
+.h5b_c2 {
+    background: radial-gradient(49.85% 56.23% at 50% 49.82%, rgba(227, 221, 214, 0.00) 0%, rgba(206, 216, 244, 0.51) 16.35%, #7E9FFF 62.24%, #7E9FFF 100%);
+    box-shadow: 0 108.18px 87.059px -66.968px #FFF inset;
+    filter: blur(2px);
+}
+
+.h5b_c3 {
+    background: radial-gradient(52.93% 52.93% at 50% 50%, #D7E1FF 60%, var(--Blue, #7E9FFF) 100%);
+    box-shadow: 0 52.58px 61.781px -18.403px #FFF inset;
+    filter: blur(8px);
+}
