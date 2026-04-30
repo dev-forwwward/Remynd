@@ -54,18 +54,18 @@
 .navbar-menu-open {
 
     .navbar {
-        background-color: var(--base-color-brand--eerie-black);
-        border-color: var(--base-color-brand--eerie-black);
+        /* background-color: var(--base-color-brand--eerie-black);
+        border-color: var(--base-color-brand--eerie-black); */
         border-radius: 2rem 2rem 0 0;
     }
 
     .menu-icon2_line-top,
     .menu-icon2_line-bottom {
-        background-color: var(--_primitives---colors--white);
+        background-color: var(--_primitives---colors--neutral-darkest);
     }
 
     .nav_logo {
-        color: var(--_primitives---colors--white);
+        color: var(--_primitives---colors--neutral-darkestk);
     }
 
     .menu-icon2_line-top {
@@ -80,11 +80,11 @@
 
     @media screen and (max-width: 991px) {
         .menu-icon2_line-top {
-            top: 4px;
+            top: 3px;
         }
 
         .menu-icon2_line-bottom {
-            bottom: 4px;
+            bottom: 3px;
         }
     }
 

@@ -12,4 +12,4 @@ swiperInit();
 form();
 footerDate();
 
-console.log("Loading main scripts loader");
+console.log("local script-loader.js loaded!");

@@ -16,23 +16,41 @@ export function form() {
             $(this).attr('novalidate', 'novalidate');
             $(this).validate({
                 rules: {
-                    yourname: {
+                    firstname: {
                         required: true
+                    },
+                    lastname: {
+                        required: true
+                    },
+                    phone: {
+                        required: true,
+                        digits: true,
+                        minlength: 10,
+                        maxlength: 15
                     },
                     youremail: {
                         required: true,
                         email: true,
                         customEmail: true, // Add the customEmail validation
+                    },
+                    yourmessage: {
+                        required: true
                     }
                 },
                 messages: {
-                    youremail:
-                        "Invalid email",
-                    yourname: "Invalid name"
+                    firstname: "First name is required",
+                    lastname: "Last name is required",
+                    phone: "Phone number is required",
+                    youremail: {
+                        required: "Company email is required",
+                        email: "Please enter a valid company email",
+                        customEmail: "Please enter a valid company email"
+                    },
+                    yourmessage: "Message is required"
                 },
                 errorPlacement: function (error, element) {
                     // Find the field wrapper using jQuery
-                    const fieldWrapper = element.closest('.form8_field-wrapper');
+                    const fieldWrapper = element.closest('.form_field-wrapper');
 
                     if (fieldWrapper.length) {
                         // Find the existing label-error-wrapper
@@ -74,5 +92,5 @@ export function form() {
         });
     });
 
-    console.log("Loading form()");
+    console.log("ED FORM!");
 }
